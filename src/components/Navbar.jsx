@@ -9,10 +9,10 @@ const Navbar = () => {
       width: '100%', 
       top: 0, 
       zIndex: 1000,
-      boxSizing: 'border-box' // Prevents width issues caused by padding
+      boxSizing: 'border-box'
     }}>
       <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'center', margin: 0, padding: 0 }}>
-        {['Home', 'About Me', 'Projects', 'Skills', 'Experience', 'Contact'].map((item) => (
+        {['Home', 'Projects', 'Skills', 'Experience', 'Contact'].map((item) => (
           <li key={item} style={{ margin: '0 1.5rem' }}>
             <a 
               href={`#${item.toLowerCase().replace(' ', '')}`} 

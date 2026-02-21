@@ -6,7 +6,7 @@ const Hero = () => {
   const summarizedIntro = "Versatile Software Engineer with 3+ years of experience, specializing in robust, scalable applications. Thrives in dynamic environments, optimizing performance for seamless user experiences.";
 
   return (
-    <section id="hero" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '70vh', padding: '60px 10% 0', backgroundColor: '#f4f4f4', color: '#333' }}>
+    <section id="home" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '70vh', padding: '60px 10% 0', backgroundColor: '#f4f4f4', color: '#333' }}>
       <div style={{ flex: 1, maxWidth: '50%' }}>
         <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Benedict Boadu-Boateng</h1>
         <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Software Engineer</h2>

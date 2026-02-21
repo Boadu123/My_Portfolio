@@ -8,13 +8,13 @@ const Contact = () => {
       name: 'LinkedIn', 
       icon: <FaLinkedinIn />, 
       color: '#0077B5', 
-      link: 'https://linkedin.com/in/your-profile' // Update with your actual link
+      link: 'https://www.linkedin.com/in/benedict-boadu-boateng'
     },
     { 
       name: 'GitHub', 
       icon: <FaGithub />, 
       color: '#4E5D6C', 
-      link: 'https://github.com/your-profile' // Update with your actual link
+      link: 'https://github.com/Boadu123'
     },
   ];
 
