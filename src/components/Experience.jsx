@@ -1,6 +1,7 @@
 import React from 'react';
 
 const experiences = [
+  // ... (Keep your existing experiences array here)
   {
     title: 'Backend Engineer',
     company: 'Amalitech',
@@ -40,6 +41,7 @@ const experiences = [
 ];
 
 const educations = [
+  // ... (Keep your existing educations array here)
   {
     degree: 'Grow Web Development Program',
     institution: 'MEST AFRICA',
@@ -56,30 +58,30 @@ const educations = [
 
 const Experience = () => {
   return (
-    <section id="experience" style={{ padding: '60px 10%', backgroundColor: '#f4f4f4', color: '#333' }}>
+    <section id="experience" style={{ padding: '80px 5%', backgroundColor: '#f4f4f4', color: '#333' }}>
       
       {/* PROFESSIONAL EXPERIENCE SECTION */}
-      <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '2rem' }}>Experience</h2>
-      <h3 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Professional Experience</h3>
+      <h2 style={{ textAlign: 'center', fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '2rem' }}>Experience</h2>
+      <h3 style={{ fontSize: 'clamp(1.5rem, 4vw, 2rem)', marginBottom: '1.5rem' }}>Professional Experience</h3>
       
       {experiences.map((exp, index) => (
-        <div key={index} style={{ marginBottom: '2rem', backgroundColor: 'white', padding: '1.5rem', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
-          <h4 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{exp.title} at {exp.company}</h4>
-          <p style={{ fontSize: '1.1rem', marginBottom: '1rem', color: '#666' }}>{exp.dates} | {exp.location}</p>
+        <div key={index} style={{ marginBottom: '2rem', backgroundColor: 'white', padding: 'clamp(1rem, 3vw, 1.5rem)', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
+          <h4 style={{ fontSize: 'clamp(1.2rem, 3vw, 1.5rem)', marginBottom: '0.5rem' }}>{exp.title} at {exp.company}</h4>
+          <p style={{ fontSize: '1rem', marginBottom: '1rem', color: '#666' }}>{exp.dates} | {exp.location}</p>
           <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem' }}>
             {exp.bullets.map((bullet, idx) => (
-              <li key={idx} style={{ marginBottom: '0.5rem', fontSize: '1rem' }}>{bullet}</li>
+              <li key={idx} style={{ marginBottom: '0.5rem', fontSize: '0.95rem', lineHeight: '1.6' }}>{bullet}</li>
             ))}
           </ul>
         </div>
       ))}
       
-      {/* EDUCATION SECTION - UPDATED TO FLEX SIDE-BY-SIDE */}
-      <h3 style={{ fontSize: '2rem', marginBottom: '1.5rem', marginTop: '3rem' }}>Education</h3>
+      {/* EDUCATION SECTION */}
+      <h3 style={{ fontSize: 'clamp(1.5rem, 4vw, 2rem)', marginBottom: '1.5rem', marginTop: '3rem' }}>Education</h3>
       
       <div style={{ 
         display: 'flex', 
-        flexWrap: 'wrap', // Allows wrapping to next line on mobile
+        flexWrap: 'wrap', 
         gap: '2rem', 
         justifyContent: 'space-between' 
       }}>
@@ -87,21 +89,20 @@ const Experience = () => {
           <div 
             key={index} 
             style={{ 
-              flex: '1',
-              minWidth: '300px',
+              flex: '1 1 250px', // Responsive flex base
               backgroundColor: 'white', 
-              padding: '1.5rem', 
+              padding: 'clamp(1rem, 3vw, 1.5rem)', 
               borderRadius: '10px', 
               boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
               display: 'flex',
               flexDirection: 'column',
-              justifyContent: 'center' // Keeps content vertically centered if they have different heights
+              justifyContent: 'center'
             }}
           >
-            <h4 style={{ fontSize: '1.4rem', marginBottom: '0.8rem', color: '#222' }}>{edu.degree}</h4>
-            <p style={{ fontSize: '1.1rem', marginBottom: '0.4rem', fontWeight: 'bold' }}>{edu.institution}</p>
-            {edu.location && <p style={{ fontSize: '1rem', marginBottom: '0.4rem', color: '#555' }}>{edu.location}</p>}
-            <p style={{ fontSize: '1rem', color: '#888', marginTop: 'auto' }}>{edu.dates}</p>
+            <h4 style={{ fontSize: 'clamp(1.2rem, 3vw, 1.4rem)', marginBottom: '0.8rem', color: '#222' }}>{edu.degree}</h4>
+            <p style={{ fontSize: '1rem', marginBottom: '0.4rem', fontWeight: 'bold' }}>{edu.institution}</p>
+            {edu.location && <p style={{ fontSize: '0.95rem', marginBottom: '0.4rem', color: '#555' }}>{edu.location}</p>}
+            <p style={{ fontSize: '0.95rem', color: '#888', marginTop: 'auto' }}>{edu.dates}</p>
           </div>
         ))}
       </div>

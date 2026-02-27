@@ -2,7 +2,6 @@ import React from 'react';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa6";
 
 const Contact = () => {
-  // Keeping only the essentials
   const socialLinks = [
     { 
       name: 'LinkedIn', 
@@ -19,18 +18,18 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" style={{ padding: '80px 10%', backgroundColor: '#f4f4f4', color: '#333', textAlign: 'center' }}>
-      <h2 style={{ fontSize: '2.5rem', marginBottom: '2.5rem' }}>Contact</h2>
+    <section id="contact" style={{ padding: '80px 5%', backgroundColor: '#f4f4f4', color: '#333', textAlign: 'center' }}>
+      <h2 style={{ fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '2.5rem' }}>Contact</h2>
 
       {/* Direct Contact Info */}
-      <div style={{ marginBottom: '3rem', lineHeight: '1.8' }}>
-        <p style={{ fontSize: '1.2rem', margin: '5px 0' }}>
+      <div style={{ marginBottom: '3rem', lineHeight: '1.8', wordBreak: 'break-word' }}>
+        <p style={{ fontSize: 'clamp(1rem, 3vw, 1.2rem)', margin: '5px 0' }}>
            <strong>Email:</strong> <a href="mailto:bboaduboateng2000@gmail.com" style={{ color: '#333', textDecoration: 'none' }}>bboaduboateng2000@gmail.com</a>
         </p>
-        <p style={{ fontSize: '1.2rem', margin: '5px 0' }}>
+        <p style={{ fontSize: 'clamp(1rem, 3vw, 1.2rem)', margin: '5px 0' }}>
           <strong>Phone:</strong> +233 556907573
         </p>
-        <p style={{ fontSize: '1.2rem', margin: '5px 0' }}>
+        <p style={{ fontSize: 'clamp(1rem, 3vw, 1.2rem)', margin: '5px 0' }}>
           <strong>Location:</strong> Accra, Ghana
         </p>
       </div>

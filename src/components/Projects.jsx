@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const projects = [
+  // ... (Keep your existing projects array here)
   {
     title: 'Proximity Finder',
     description: 'Location-based marketplace connecting users with nearby professionals for tasks. Manages bookings, payments, real-time search, verified profiles, and dispute resolution.',
@@ -32,7 +33,8 @@ const ProjectCard = ({ project }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        width: '320px',
+        width: '100%', 
+        maxWidth: '320px', // Responsive safety net
         height: '320px',
         borderRadius: '16px',
         border: '1px solid #ddd',
@@ -45,7 +47,6 @@ const ProjectCard = ({ project }) => {
         justifyContent: 'center',
         textAlign: 'center',
         
-
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${project.image})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -54,7 +55,7 @@ const ProjectCard = ({ project }) => {
     >
       {/* Default state - Title */}
       <h3 style={{
-        fontSize: '1.8rem',
+        fontSize: 'clamp(1.5rem, 4vw, 1.8rem)',
         margin: 0,
         color: 'white',
         zIndex: 2,
@@ -149,10 +150,10 @@ const ProjectCard = ({ project }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" style={{ padding: '80px 10% 100px', backgroundColor: '#f8f9fa' }}>
+    <section id="projects" style={{ padding: '80px 5% 100px', backgroundColor: '#f8f9fa' }}>
       <h2 style={{
         textAlign: 'center',
-        fontSize: '2.8rem',
+        fontSize: 'clamp(2rem, 5vw, 2.8rem)',
         marginBottom: '3rem',
         color: '#222'
       }}>

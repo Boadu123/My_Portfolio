@@ -1,6 +1,7 @@
 import React from 'react';
 
 const skillsData = [
+  // ... (Keep your existing skillsData array here)
   { 
     category: 'Programming Languages', 
     items: ['Java', 'JavaScript', 'Python', 'HTML/CSS'],
@@ -50,9 +51,9 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section id="skills" style={{ padding: '60px 10%', backgroundColor: '#f4f4f4', color: '#333' }}>
-      <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '2rem' }}>Skills</h2>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+    <section id="skills" style={{ padding: '80px 5%', backgroundColor: '#f4f4f4', color: '#333' }}>
+      <h2 style={{ textAlign: 'center', fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '2rem' }}>Skills</h2>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
         {skillsData.map((skill, index) => (
           <div 
             key={index} 
@@ -76,10 +77,10 @@ const Skills = () => {
             }}
           >
             <h3 style={{ 
-              fontSize: '1.8rem', 
+              fontSize: 'clamp(1.4rem, 4vw, 1.8rem)', 
               marginBottom: '1.2rem',
               fontWeight: '700',
-              textShadow: '0 2px 4px rgba(0,0,0,0.5)' // Subtle shadow for readability
+              textShadow: '0 2px 4px rgba(0,0,0,0.5)' 
             }}>
               {skill.category}
             </h3>
@@ -93,7 +94,7 @@ const Skills = () => {
               {skill.items.map((item, idx) => (
                 <li key={idx} style={{ 
                   marginBottom: '0.6rem', 
-                  fontSize: '1.1rem',
+                  fontSize: 'clamp(1rem, 3vw, 1.1rem)',
                   fontWeight: '500'
                 }}>
                   {item}
