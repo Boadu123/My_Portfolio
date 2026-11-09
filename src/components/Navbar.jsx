@@ -21,7 +21,7 @@ const Navbar = () => {
         flexWrap: 'wrap', // Wraps neatly if the screen gets too small
         gap: '1.5rem' // Uses gap instead of rigid margins
       }}>
-        {['Home', 'Projects', 'Skills', 'Experience', 'Contact'].map((item) => (
+        {['Home', 'Skills', 'Experience', 'Contact'].map((item) => (
           <li key={item}>
             <a 
               href={`#${item.toLowerCase().replace(' ', '')}`} 

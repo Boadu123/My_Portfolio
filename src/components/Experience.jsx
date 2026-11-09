@@ -1,11 +1,24 @@
 import React from 'react';
 
 const experiences = [
-  // ... (Keep your existing experiences array here)
+  {
+    title: 'Software Engineer',
+    company: 'FirstBank Ghana',
+    location: 'Accra, Ghana / On-site',
+    dates: '06/2026 - Present',
+    bullets: [
+      'Developed and maintained enterprise Java applications using Java, Jakarta EE, and JPA.',
+      'Implemented maker-checker workflows and role-based approval processes.',
+      'Integrated banking systems with internal and third-party APIs.',
+      'Managed database migrations, schema updates, and deployment activities.',
+      'Troubleshot and resolved application, database, and integration issues on WildFly servers.',
+      'Collaborated with cross-functional teams to deliver secure and reliable banking solutions.'
+    ]
+  },
   {
     title: 'Backend Engineer',
     company: 'Amalitech',
-    location: 'Accra, Ghana',
+    location: 'Accra, Ghana / Hybrid',
     dates: '04/2025 – 01/2026',
     bullets: [
       'Designed and developed enterprise-grade backend systems using Spring Boot 3, following both monolith and microservices architectures, to support local service discovery, user-to-provider connections, and scalable booking workflows.',
@@ -19,19 +32,18 @@ const experiences = [
   {
     title: 'AWS Cloud Engineer',
     company: 'Amalitech',
-    location: 'Accra, Ghana',
+    location: 'Accra, Ghana / Hybrid',
     dates: '08/2025 – 09/2025',
     bullets: [
       'Designed and deployed secure, highly available AWS cloud infrastructure using CloudFormation, enabling consistent and automated environment provisioning.',
       'Implemented CI/CD pipelines by integrating GitHub Actions with AWS CodeDeploy, achieving faster, low-latency, and reliable production deployments.',
-      'Applied cloud governance and FinOps best practices, leveraging AWS Cost Explorer and Trusted Advisor to optimize infrastructure costs while maintaining security and compliance.',
-      'Supported scalable backend services through AWS-native architectures, improving system reliability and operational efficiency.'
+      'Applied cloud governance and FinOps best practices, leveraging AWS Cost Explorer and Trusted Advisor to optimize infrastructure costs while maintaining security and compliance.'
     ]
   },
   {
     title: 'Full-Stack Web Developer',
     company: 'Core Extreme',
-    location: 'Accra, Ghana',
+    location: 'Accra, Ghana / On-site',
     dates: '11/2024 – 03/2025',
     bullets: [
       'Full-Stack Architecture: Architected scalable web solutions using Node.js and Express.js, overseeing the entire development lifecycle from debugging to automated deployment.',
@@ -41,11 +53,9 @@ const experiences = [
 ];
 
 const educations = [
-  // ... (Keep your existing educations array here)
   {
     degree: 'Grow Web Development Program',
     institution: 'MEST AFRICA',
-    location: 'Accra, Ghana',
     dates: '09/2024 – 11/2024'
   },
   {

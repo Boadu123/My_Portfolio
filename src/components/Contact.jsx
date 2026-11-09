@@ -27,7 +27,7 @@ const Contact = () => {
            <strong>Email:</strong> <a href="mailto:bboaduboateng2000@gmail.com" style={{ color: '#333', textDecoration: 'none' }}>bboaduboateng2000@gmail.com</a>
         </p>
         <p style={{ fontSize: 'clamp(1rem, 3vw, 1.2rem)', margin: '5px 0' }}>
-          <strong>Phone:</strong> +233 556907573
+          <strong>Phone:</strong> <a href="tel:+233556907573" style={{ color: '#333', textDecoration: 'none' }}>+233 556907573</a>
         </p>
         <p style={{ fontSize: 'clamp(1rem, 3vw, 1.2rem)', margin: '5px 0' }}>
           <strong>Location:</strong> Accra, Ghana
@@ -48,6 +48,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
             title={social.name}
+            aria-label={social.name}
             style={{
               display: 'flex',
               alignItems: 'center',

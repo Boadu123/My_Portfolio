@@ -1,7 +1,6 @@
 import React from 'react';
 
 const skillsData = [
-  // ... (Keep your existing skillsData array here)
   { 
     category: 'Programming Languages', 
     items: ['Java', 'JavaScript', 'Python', 'HTML/CSS'],
@@ -9,7 +8,7 @@ const skillsData = [
   },
   { 
     category: 'Databases', 
-    items: ['PostgreSQL', 'MySQL', 'NoSQL (MongoDB)'],
+    items: ['PostgreSQL', 'MySQL', 'Microsoft SQL Server', 'NoSQL (MongoDB)', 'Oracle Database'],
     image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
   },
   { 
@@ -29,7 +28,7 @@ const skillsData = [
   },
   { 
     category: 'Frameworks and libraries', 
-    items: ['Django', 'Node.js', 'Express.js', 'React.js', 'Spring Boot', 'Next.js'],
+    items: ['Spring Boot', 'Node.js', 'Express.js', 'React.js', 'Django REST Framework', 'Spring Data JPA / Hibernate'],
     image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
   },
   { 
@@ -44,7 +43,7 @@ const skillsData = [
   },
   { 
     category: 'Cloud technologies', 
-    items: ['AWS (EC2, S3, RDS, Lambda, VPC)', 'cost optimization', 'scalable architecture'],
+    items: ['AWS (EC2, S3, RDS, Lambda, VPC)', 'Cost optimization (AWS Cost Explorer, Trusted Advisor)', 'Scalable architecture design'],
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
   },
 ];
@@ -53,7 +52,7 @@ const Skills = () => {
   return (
     <section id="skills" style={{ padding: '80px 5%', backgroundColor: '#f4f4f4', color: '#333' }}>
       <h2 style={{ textAlign: 'center', fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '2rem' }}>Skills</h2>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(250px, 100%), 1fr))', gap: '2rem' }}>
         {skillsData.map((skill, index) => (
           <div 
             key={index} 
